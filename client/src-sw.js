@@ -8,7 +8,7 @@ const { precacheAndRoute } = require('workbox-precaching/precacheAndRoute');
 precacheAndRoute(self.__WB_MANIFEST);
 
 const pageCache = new CacheFirst({
-  cacheName: 'page-cache',
+  cacheName: 'asset-cache',
   plugins: [
     new CacheableResponsePlugin({
       statuses: [0, 200],
