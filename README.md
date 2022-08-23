@@ -63,4 +63,4 @@ The technologies used in this project are as follow:
 - JavaScript
 - Node.js
 - Express
-- MongoDB
+- Heroku
