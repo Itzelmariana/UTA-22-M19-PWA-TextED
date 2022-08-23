@@ -1624,13 +1624,7 @@
                         'return',
                         M('jate', 1, {
                           upgrade: function (n) {
-                            n.objectStoreNames.contains('jate')
-                              ? console.log('jate database already exists')
-                              : (n.createObjectStore('jate', {
-                                  keyPath: 'id',
-                                  autoIncrement: !0,
-                                }),
-                                console.log('jate database created'));
+                            n.objectStoreNames.contains('jate');
                           },
                         })
                       );
@@ -1652,10 +1646,7 @@
                 for (;;)
                   switch ((n.prev = n.next)) {
                     case 0:
-                      return n.abrupt(
-                        'return',
-                        console.error('putDb not implemented')
-                      );
+
                     case 1:
                     case 'end':
                       return n.stop();
@@ -1674,10 +1665,6 @@
                 for (;;)
                   switch ((n.prev = n.next)) {
                     case 0:
-                      return n.abrupt(
-                        'return',
-                        console.error('getDb not implemented')
-                      );
                     case 1:
                     case 'end':
                       return n.stop();
@@ -1721,8 +1708,7 @@
               localStorage.setItem('content', t.editor.getValue());
             }),
             this.editor.on('blur', function () {
-              console.log('The editor has lost focus'),
-                W(localStorage.getItem('content'));
+              W(localStorage.getItem('content'));
             });
         }),
         U = e(379),
